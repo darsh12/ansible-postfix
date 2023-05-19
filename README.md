@@ -8,10 +8,11 @@ Role Variables
 --------------
 
 ```yaml
-- smtp_address: smtp.example.com
-- relay_port: 465
-- mail_relay_email: email@example.com
-- mail_relay_password: examplepassword
+myhostname: "{{ ansible_hostname }}"
+smtp_address: smtp.example.com
+relay_port: 465
+mail_relay_email: email@example.com
+mail_relay_password: examplepassword
 ```
 
 
