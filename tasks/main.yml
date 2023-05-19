@@ -60,4 +60,3 @@
     mode: 0600
   notify: Restart postfix
   become: true
-
