@@ -1,0 +1,4 @@
+---
+# defaults file for postfix_mail
+smtp_address: smtp.example.com
+relay_port: 465

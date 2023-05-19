@@ -1,0 +1,12 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Check Postfix Config
+      ansible.builtin.command:
+        cmd: postfix check
+      register: postfix_output
+      failed_when: "'warning' in postfix_output.stdout"

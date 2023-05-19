@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include darsh12.postfix"
+      include_role:
+        name: "postfix"
+      vars:
+        mail_relay_email: mail@example.com
+        mail_relay_password: examplepassword
