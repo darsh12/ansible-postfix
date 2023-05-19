@@ -1,4 +1,4 @@
-postfix_mail
+postfix
 =========
 
 Ansible role to configure postfix with a email relay in order to send emails from the server.
